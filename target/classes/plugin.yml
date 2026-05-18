@@ -1,0 +1,44 @@
+name: RockPaperScissorsPro
+version: 2.1.1
+main: org.curryman.rockpaperscissorspro.RockPaperScissorsPro
+api-version: '1.21'
+author: curryman
+description: A feature-rich Rock Paper Scissors plugin
+softdepend:
+  - Vault
+
+commands:
+  rps:
+    description: Rock Paper Scissors main command
+    usage: /rps <challenge|create|games|accept|deny|reload> [args]
+    aliases:
+      - rockpaperscissors
+
+permissions:
+  rps.challenge:
+    description: Allows a player to challenge others
+    default: true
+  rps.create:
+    description: Allows a player to create an open game lobby
+    default: true
+  rps.games:
+    description: Allows a player to browse and join open lobbies
+    default: true
+  rps.reload:
+    description: Allows reloading plugin configuration
+    default: op
+  rps.max.1:
+    description: Player can have 1 simultaneous open lobby
+    default: true
+  rps.max.2:
+    description: Player can have 2 simultaneous open lobbies
+    default: false
+  rps.max.3:
+    description: Player can have 3 simultaneous open lobbies
+    default: false
+  rps.max.5:
+    description: Player can have 5 simultaneous open lobbies
+    default: op
+  rps.max.10:
+    description: Player can have 10 simultaneous open lobbies
+    default: false

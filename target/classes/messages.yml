@@ -1,0 +1,107 @@
+# RockPaperScissorsPro Messages v2.1
+# Use & for color codes.
+
+prefix: "&8[&c&lRPS&8] &r"
+
+# General
+no-permission: "&cYou don't have permission to do that."
+player-only: "&cThis command can only be run by a player."
+unknown-subcommand: "&cUnknown subcommand. Use: /rps <challenge|create|games|accept|deny|reload>"
+player-not-found: "&cPlayer &e%player% &cnot found or is offline."
+plugin-reloaded: "&aPlugin configuration reloaded successfully."
+
+# Challenge
+# Placeholders: %player%
+challenge-sent: "&aChallenge sent to &e%player% &afor &6$%amount%&a!"
+challenge-received: "&e%challenger% &achallenged you to RPS for &6$%amount%&a!"
+challenge-already-pending-sent: "&cYou already have a pending challenge with &e%player%&c."
+challenge-already-pending-received: "&cYou already have a pending challenge. Respond to it first."
+challenge-not-found: "&cYou have no pending challenges."
+# Placeholders: %seconds%
+challenge-timeout-challenger: "&cYour challenge timed out after &e%seconds%s&c."
+challenge-timeout-challenged: "&cThe challenge you received has expired."
+# Placeholders: %challenger%
+challenge-accepted: "&aYou accepted &e%challenger%&a's challenge!"
+# Placeholders: %player%
+challenge-accepted-notify: "&e%player% &aaccepted your challenge!"
+# Placeholders: %player%
+challenge-denied: "&cYou denied &e%player%&c's challenge."
+# Placeholders: %challenger%
+challenge-denied-notify: "&e%challenger% &cdenied your challenge."
+self-challenge: "&cYou cannot challenge yourself!"
+# Placeholders: %player%
+target-in-match: "&c&e%player% &cis already in a match."
+challenger-in-match: "&cYou are already in a match."
+# Placeholders: %seconds%
+on-cooldown: "&cWait &e%seconds%s &cbefore challenging again."
+
+# Create lobby
+# Placeholders: %amount%
+create-success: "&aOpen game created with a &6$%amount% &abet! Waiting for a challenger..."
+create-cancelled: "&cYour open game has been cancelled."
+create-no-games: "&cYou have no open games to cancel."
+# Placeholders: %max%
+create-max-reached: "&cYou can only have &e%max% &copen game(s) at a time."
+create-already-in-match: "&cYou cannot create a game while in a match."
+# Placeholders: %seconds%
+create-timeout: "&7Your open game expired after &e%seconds%s &7with no challenger."
+
+# Games GUI
+# Placeholders: %player%
+game-accepted: "&aYou joined &e%player%&a's game!"
+# Placeholders: %player%
+game-accepted-notify: "&e%player% &ajoined your game! Get ready!"
+game-not-found: "&cThat game no longer exists."
+game-self-join: "&cYou cannot join your own game."
+game-creator-unavailable: "&cThis game is no longer available."
+
+# Countdown (action bar) — Placeholders: %seconds%
+countdown-actionbar: "&6&l%seconds%..."
+countdown-go: "&a&lGO! Choose your move!"
+
+# Match
+# Placeholders: %opponent%
+waiting-for-opponent: "&7Waiting for &e%opponent% &7to choose..."
+# Placeholders: %choice%
+you-chose: "&7You chose: &e%choice%"
+
+# Results (action bar)
+# Placeholders: %winner_choice% %loser_choice%
+result-win: "&a&lYOU WIN! &7(%winner_choice% beats %loser_choice%)"
+result-lose: "&c&lYOU LOSE! &7(%loser_choice% beats %winner_choice%)"
+# Placeholders: %winner_choice%
+result-tie: "&e&lTIE! &7You both chose %winner_choice%!"
+result-draw: "&e&lDRAW! &7Maximum replays reached."
+
+# Results (chat)
+# Placeholders: %winner% %loser% %winner_choice% %loser_choice%
+result-win-chat: "&a&l★ WINNER! &aYou beat &e%loser% &awith &e%winner_choice% &aover &c%loser_choice%&a!"
+result-lose-chat: "&c&l✕ DEFEATED! &c%winner% &cbeat you with &e%winner_choice% &cover &c%loser_choice%&c."
+result-tie-chat: "&e&l~ TIE ~ &7Both chose &e%winner_choice%&7. Replaying..."
+result-draw-chat: "&e&l~ DRAW ~ &7Maximum replays reached. No winner."
+
+# Betting
+# Placeholders: %amount%
+bet-taken: "&7Your bet of &e$%amount% &7has been deducted. Good luck!"
+# Placeholders: %amount% %total%
+bet-won: "&a&l★ You won the bet! &a+$%total% &7(your $%amount% back + opponent's $%amount%)"
+# Placeholders: %amount%
+bet-lost: "&c&l✕ You lost the bet. &7-$%amount%"
+# Placeholders: %amount%
+bet-refunded: "&eIt's a draw — your &6$%amount% &ebet has been refunded."
+# Placeholders: %amount% %total%
+bet-won-forfeit: "&a&l★ Opponent forfeited! &aYou received &e$%total%&a."
+bet-disabled: "&cBetting is currently disabled."
+bet-invalid-amount: "&cInvalid amount. Enter a whole positive number."
+# Placeholders: %min%
+bet-too-low: "&cMinimum bet is &e$%min%&c."
+# Placeholders: %max%
+bet-too-high: "&cMaximum bet is &e$%max%&c."
+# Placeholders: %amount%
+bet-insufficient-funds: "&cYou don't have enough money. You need &e$%amount%&c."
+# Shown to the challenger/creator when the opponent can't afford their half on accept
+# Placeholders: %player% %amount%
+bet-opponent-insufficient-funds: "&c&e%player% &cdoesn't have enough money to cover the &e$%amount% &cbet. Match cancelled."
+# Shown to the broke player when they accept but can't afford it
+# Placeholders: %amount%
+bet-you-insufficient-funds-on-accept: "&cYou don't have &e$%amount% &cto cover this bet. Match cancelled."
